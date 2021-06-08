@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class PagerdutyController {
 	
 	@PostMapping("/createteam")
-	public String createTeam(HttpServletRequest request, HttpServletResponse response) {
+	public void createTeam(HttpServletRequest request, HttpServletResponse response) {
 		
 		ObjectMapper mapper = new ObjectMapper();
 		CreateTeam createTeam = null;
@@ -32,12 +32,9 @@ public class PagerdutyController {
 		}
 		
 		if(createTeam != null) {
-			
+			// logic to invoke the service layer
 		}
 		
-		
-		
-		return null;
 	}
 	
 }
